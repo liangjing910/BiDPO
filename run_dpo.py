@@ -84,7 +84,7 @@ def find_all_linear_names(named_modules: Dict, target_modules: List[str]):
 
 
 def train():
-    os.environ["WANDB_PROJECT"] = "S-VCO"
+    os.environ["WANDB_PROJECT"] = "bidpo"
 
     parser = transformers.HfArgumentParser((ModelArguments, TrainingArguments))
     model_args, training_args = parser.parse_args_into_dataclasses()
